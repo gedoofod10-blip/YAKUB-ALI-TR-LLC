@@ -1,0 +1,104 @@
+@import "tailwindcss";
+
+@theme {
+  --font-cairo: "Cairo", ui-sans-serif, system-ui, sans-serif;
+  --font-inter: "Inter", ui-sans-serif, system-ui, sans-serif;
+
+  --color-navy-50: #eef3fb;
+  --color-navy-100: #d6e1f3;
+  --color-navy-200: #aec3e6;
+  --color-navy-300: #7f9fd3;
+  --color-navy-400: #4f78bb;
+  --color-navy-500: #2f589b;
+  --color-navy-600: #214279;
+  --color-navy-700: #17305a;
+  --color-navy-800: #102244;
+  --color-navy-900: #0b1b33;
+  --color-navy-950: #06101f;
+
+  --color-amber-brand: #f59e0b;
+
+  --animate-float: float 6s ease-in-out infinite;
+  --animate-fade-up: fadeUp 0.8s ease-out both;
+  --animate-pulse-ring: pulseRing 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  --animate-marquee: marquee 30s linear infinite;
+  --animate-shimmer: shimmer 2.5s linear infinite;
+
+  @keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-12px); }
+  }
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(24px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  @keyframes pulseRing {
+    0% { transform: scale(1); opacity: 0.7; }
+    100% { transform: scale(1.8); opacity: 0; }
+  }
+  @keyframes marquee {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+  }
+  @keyframes shimmer {
+    from { background-position: -200% 0; }
+    to { background-position: 200% 0; }
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-slate-50 text-slate-800 antialiased;
+}
+
+html[dir="rtl"] body {
+  font-family: var(--font-cairo);
+}
+html[dir="ltr"] body {
+  font-family: var(--font-inter);
+}
+
+[dir="rtl"] .font-brand {
+  font-family: var(--font-cairo);
+}
+[dir="ltr"] .font-brand {
+  font-family: var(--font-inter);
+}
+
+/* Reveal on scroll */
+.reveal {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+.reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Grid pattern */
+.bg-grid {
+  background-image:
+    linear-gradient(to right, rgba(255,255,255,0.06) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255,255,255,0.06) 1px, transparent 1px);
+  background-size: 48px 48px;
+}
+
+.text-gradient {
+  background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 50%, #d97706 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+::selection {
+  background: #f59e0b;
+  color: #0b1b33;
+}
+
+::-webkit-scrollbar { width: 10px; }
+::-webkit-scrollbar-track { background: #f1f5f9; }
+::-webkit-scrollbar-thumb { background: #17305a; border-radius: 99px; }

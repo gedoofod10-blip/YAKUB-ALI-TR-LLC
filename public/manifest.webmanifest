@@ -1,0 +1,34 @@
+{
+  "name": "يعقوب علي للأدوات الكهربائية والصحية | Yakub Ali TR LLC",
+  "short_name": "يعقوب علي",
+  "description": "يعقوب علي لتجارة الأدوات الكهربائية والصحية ذ.م.م - الشارقة. توريد وتوصيل مستلزمات السباكة والكهرباء والأدوات الصحية.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#0a1f3d",
+  "theme_color": "#0a1f3d",
+  "lang": "ar",
+  "dir": "rtl",
+  "categories": ["business", "shopping", "utilities"],
+  "icons": [
+    {
+      "src": "/pwa-icon.svg",
+      "sizes": "192x192 512x512",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "/pwa-icon.svg",
+      "sizes": "192x192 512x512",
+      "type": "image/svg+xml",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/images/official-logo.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}

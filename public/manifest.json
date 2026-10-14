@@ -1,0 +1,54 @@
+{
+  "name": "يعقوب علي للأدوات الكهربائية والصحية | Yakub Ali TR LLC",
+  "short_name": "يعقوب علي",
+  "description": "يعقوب علي لتجارة الأدوات الكهربائية والصحية ذ.م.م - الشارقة. توريد وتوصيل مستلزمات السباكة والكهرباء والأدوات الصحية.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#0a1f3d",
+  "theme_color": "#0a1f3d",
+  "lang": "ar",
+  "dir": "rtl",
+  "categories": ["business", "shopping", "utilities"],
+  "icons": [
+    {
+      "src": "/pwa-icon.svg",
+      "sizes": "192x192 512x512",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "/pwa-icon.svg",
+      "sizes": "192x192 512x512",
+      "type": "image/svg+xml",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/images/official-logo.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "المنتجات والمخزون",
+      "short_name": "المنتجات",
+      "url": "./#/products",
+      "description": "تصفح كتالوج المواد والأدوات الصحية والكهربائية"
+    },
+    {
+      "name": "تواصل عبر واتساب",
+      "short_name": "واتساب",
+      "url": "https://wa.me/971564773411",
+      "description": "تحدث مع مستودع يعقوب علي مباشرة"
+    },
+    {
+      "name": "موقع المستودع والاتجاهات",
+      "short_name": "الموقع",
+      "url": "https://www.google.com/maps/dir/?api=1&destination=7G2M%2BCQ+Sharjah+United+Arab+Emirates",
+      "description": "حي حوشي - أرض المستودعات S116 - الشارقة"
+    }
+  ]
+}
